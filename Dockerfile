@@ -1,4 +1,4 @@
-FROM steamcmd:ubuntu-18
+FROM steamcmd/steamcmd:ubuntu-18
 
 ENV VALHEIM_NAME="ValheimName"
 ENV VALHEIM_WORLD="ValheimWorld"
