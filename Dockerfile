@@ -23,5 +23,5 @@ RUN echo "${VALHEIM_PASSWORD}" > /valheim/password
 COPY ./run_valheim.sh /valheim
 RUN chmod +x ./run_valheim.sh
 
-ENTRYPOINT bash
+ENTRYPOINT bash /valheim/run_valheim.sh
 CMD bash /valheim/run_valheim.sh
