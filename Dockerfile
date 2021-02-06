@@ -2,7 +2,8 @@ FROM steamcmd/steamcmd:ubuntu-18
 
 ENV VALHEIM_NAME="ValheimName"
 ENV VALHEIM_WORLD="ValheimWorld"
-ENV VALHEIM_PASWORD="ValheimPassword"
+ENV VALHEIM_PORT=2456
+ENV VALHEIM_PASSWORD="ValheimPassword"
 
 # TODO - expose selected port dynamically
 EXPOSE 2456
