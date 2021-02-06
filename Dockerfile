@@ -20,7 +20,7 @@ RUN echo "${VALHEIM_WORLD}" > /valheim/world
 RUN echo "${VALHEIM_PASSWORD}" > /valheim/password
 
 COPY ./run_valheim.sh /valheim
-RUN chown +d ./run_valheim.sh
+RUN chmod +x ./run_valheim.sh
 
 ENTRYPOINT bash
 CMD /valheim/run_valheim.sh
