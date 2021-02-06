@@ -21,4 +21,5 @@ COPY ./run_valheim.sh /valheim
 
 RUN steamcmd +login anonymous +force_install_dir /valheim +app_update 896660 validate +exit
 
-CMD [ "bash", "/valheim/run_valheim.sh"]
+ENTRYPOINT bash
+CMD /valheim/run_valheim.sh
