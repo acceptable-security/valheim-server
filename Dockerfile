@@ -3,7 +3,6 @@ FROM steamcmd/steamcmd:ubuntu-18
 ENV VALHEIM_NAME="ValheimName"
 ENV VALHEIM_WORLD="ValheimWorld"
 ENV VALHEIM_PASWORD="ValheimPassword"
-ENV VALHEIM_PORT=2456
 
 # TODO - expose selected port dynamically
 EXPOSE 2456
@@ -22,4 +21,4 @@ COPY ./run_valheim.sh /valheim
 
 RUN steamcmd +login anonymous +force_install_dir /valheim +app_update 896660 validate +exit
 
-ENTRYPOINT [ "bash", "/valheim/run_valheim.sh"]
+CMD [ "bash", "/valheim/run_valheim.sh"]
