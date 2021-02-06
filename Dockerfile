@@ -24,4 +24,4 @@ COPY ./run_valheim.sh /valheim
 RUN chmod +x ./run_valheim.sh
 
 ENTRYPOINT bash
-CMD /valheim/run_valheim.sh
+CMD bash /valheim/run_valheim.sh
