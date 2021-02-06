@@ -5,8 +5,10 @@ ENV VALHEIM_WORLD="ValheimWorld"
 ENV VALHEIM_PASWORD="ValheimPassword"
 ENV VALHEIM_PORT=2456
 
-EXPOSE ${VALHEIM_PORT}/tcp
-EXPOSE ${VALHEIM_PORT}/udp
+# TODO - expose selected port dynamically
+EXPOSE 2456
+EXPOSE 2457
+EXPOSE 2458
 
 RUN mkdir /valheim
 WORKDIR /valheim
